@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration form</title>
+    <style>
+        .card{
+            border: 1px solid #ddd;
+            background: sandybrown;
+            padding:20px;
+            margin-bottom: 10px;
+            margin-right: 250px;
+            margin-left: 250px;
+            
+        }
+
+        .Information {
+            border: 1px #ddd;
+            background: wheat;
+            margin-right: 250px;
+            margin-left: 250px;
+            padding-left: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 15px;
+        }
+
+        .male {
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <header id="header" class="card">
+        <h1 style="text-align: center; color: aliceblue;">Student Registration Form</h1>
+        </header>
+    </div>
+
+            <div style="background-color: #f5deb3;" class="Information">
+  <h2>Personal Information</h2>
+  <table cellspacing="15" style="width: 100%; border-collapse: separate;">
+    <tr>
+      <td>
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" style="margin-top: 10px;">
+      </td>
+      <td>
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" style="margin-top: 10px;">
+      </td>
+      <td>
+        <label for="phone">Phone Number:</label><br>
+        <input type="text" id="phone" name="phone" style="margin-top: 10px;">
+      </td>
+      <td>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" style="margin-top: 10px;">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="Male" style="margin-top: 10px;">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+      </td>
+      <td>
+        <label for="course">Select Course:</label><br>
+        <select id="course" name="course" style="margin-top: 10px;">
+          <option value="">--Select--</option>
+          <option value="Computer Science">Computer Science</option>
+          <option value="Electrical Engineering">Electrical Engineering</option>
+          <option value="Mechanical Engineering">Mechanical Engineering</option>
+        </select>
+      </td>
+      <td>
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" style="margin-top: 10px;">
+      </td>
+      <td>
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="2" cols="20"></textarea style="margin-top: 10px;">
+      </td>
+    </tr>
+  </table>
+</div>
+   
+                        
+                                
+                            
+                        </div>
+    </div>
+
+
+<div style="background-color: #f5deb3; padding-right: 50px;" class="Information">
+  <h2 style="margin-top: 20px;">Educational Details</h2>
+  <table cellspacing="15" style="width: 100%; border-collapse: separate;">
+    <tr>
+      <td >
+        <label for="qualification">Highest Qualification:</label><br>
+        <input type="text" id="qualification" name="qualification" style="margin-top: 10px;">
+      </td>
+      <td>
+        <label for="university">University/College Name:</label><br>
+        <input type="text" id="university" name="university" style="margin-top: 10px;">
+      </td>
+      <td>
+        <label for="year">Year of Passing:</label><br>
+        <input type="" id="year" name="year" style="margin-top: 10px;">
+        <select id="year" name="year" required>
+                            <option value="">--Select Year--</option>
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            </select>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td colspan="1">
+                                    <label for="percentage">Percentage or CGPA:</label><br>
+                                    <input type="text" id="percentage" name="percentage" style="margin-top: 10px;">
+                                </td>
+                                <td colspan="2">
+                                    <label for="course">Course or Major:</label><br>
+                                    <input type="text" id="course" name="course" style="margin-top: 10px;">
+                                </td>
+                                </tr>
+                            </table>
+ </div>
+
+
+                    <div style="background-color: #f5deb3; padding-right: 50px;" class="Information">
+                            <h2>Skills and Interests</h2>
+                    <table style="width: 100%; border-collapse: separate;" cellspacing="15">
+                        <tr>
+                        <td style="padding: 8px; vertical-align: top;">
+                            <label for="technicalSkills">Technical Skills:</label><br>
+                            <textarea id="technicalSkills" name="technicalSkills" rows="4" cols="35" placeholder="e.g., Java, Python, Git" style="margin-top: 10px;"></textarea>
+                        </td>
+                        <td style="padding: 8px; vertical-align: top;">
+                            <label for="hobbies">Hobbies:</label><br>
+                            <textarea id="hobbies" name="hobbies" rows="4" cols="35" placeholder="e.g., Reading, Traveling" style="margin-top: 10px;"></textarea>
+                        </td>
+                        </tr>
+                        <tr>
+                        <td style="padding: 8px; vertical-align: top;">
+                            <label for="jobInterest">Areas of Interest Related to Job:</label><br>
+                            <textarea id="jobInterest" name="jobInterest" rows="4" cols="35" placeholder="e.g., Web Development, Data Science" style="margin-top: 10px;"></textarea>
+                        </td>
+                        <td style="padding: 8px; vertical-align: top;">
+                            <label for="others">Others Platform:</label><br>
+                            <textarea id="others" name="others" rows="4" cols="35" placeholder="Other platforms or interests" style="margin-top: 10px;"></textarea>
+                        </td>
+                        </tr>
+                    </table><br>
+                    </div>
+
+
+                    <div style="background-color: #f5deb3; padding-right: 50px;" class="Information">
+                            <h2></h2>
+                        <form action="/submit_resume" method="post" enctype="multipart/form-data">
+                            <table style="background-color: #f5deb3; padding: 20px;">
+                                <tr>
+                                <td>
+                                    <label for="resumeUpload">Upload Your Resume (PDF):</label>
+                                </td>
+                                <td>
+                                    <input type="file" id="resumeUpload" name="resumeUpload" accept=".pdf" required>
+                                </td>
+                                </tr>
+                                <tr>
+                                <td colspan="2" style="text-align: center; padding-top: 20px; padding-right: 100px;">
+                                    <input type="submit" value="Submit Resume">
+                                </td>
+                                </tr>
+                            </table>
+                            </form>
+                           
+                    </table>
+                    </div>
+
+                    <div style="background-color: #f5deb3; padding-right: 50px;" class="Information">
+                            <h2></h2>
+                            <form action="/submit_form" method="post">
+                            <table style="background-color: #f5deb3; padding: 20px; width: 100%;">
+                            <tr>
+                            <td style="padding: 8px;">
+                                <input type="checkbox" id="consent" name="consent" value="agree" required>
+                                <label for="consent">
+                                I agree to the <a href="terms.html" target="_blank">Terms and Conditions</a> and consent to background checks.
+                                </label>
+                            </td>
+                            </tr>
+                            <tr>
+                            <td style="text-align: center; padding-top: 10px;">
+                                <input style="background-color: blue;" type="submit"  value="Submit">
+                            </td>
+                            </tr>
+                        </table>
+                        </form>
+
+                    </div>
+
+
+
+
+    
+</body>
+</html>
